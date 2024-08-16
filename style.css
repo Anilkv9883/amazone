@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'AmazonEmber';
+    src: url(./fonts/Amazon\ Ember.ttf);
+}
+body{
+    font-family: 'AmazonEmber';
+}
+/* nav css  */
+nav{
+    background: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    padding: 6px 12px;
+}
+nav .border {
+    border: 1px solid transparent;
+    min-height: 45px;
+    padding: 0 10px;
+    border-radius: 2px;
+}
+nav .border:hover{
+border-color: white;
+}
+nav .logo{
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+}
+nav img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    padding: 5px 0px 0px 0px;
+    /* padding-bottom: 0; */
+}
+.location{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.location i{
+    /* align-self: bottom; */
+    font-size: 18px;
+    padding: 7px;
+    margin-top: 10px;
+    
+}
+.location .delivery-loc{
+    font-size: 12px;
+}
+.location .update-loc{
+    font-size: 14px;
+    font-weight: 500;
+}
+.search-bar form{
+    display: flex;
+}
+.search-bar form input,.search-bar form select,.search-bar form button{
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    
+}
+.search-bar form input {
+    /* flex: 1; */
+    width: 100%;
+    /* border: none; */
+}
+.search-bar form button {
+    background: #FEBD69;
+    padding: 7px 16px;
+    font-size: 18px;
+}
+
+.search-bar{
+    flex-grow: 0.5;
+    border-radius: 3px;
+    overflow: hidden;
+
+}
+.search-bar select{
+    background-color: #E6E6E6;
+    padding: 7px 10px;
+}
+.language img{
+    width: 40px;
+}
+.language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+.language i{
+    color: #E6E6E6;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.account-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.account-info .sign-in{
+    font-size: 12px;
+}
+.account-info .account{
+    font-size: 14px;
+    font-weight: 700;
+}
+.orders-wraper{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.orders-wraper .return{
+    font-size: 12px;
+}
+.orders-wraper .orders{
+    font-size: 14px;
+    font-weight: 700;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart i{
+    font-size: 20px;
+}
+.cart span{
+    font-size: 14px;
+    font-weight: 700;
+}

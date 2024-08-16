@@ -1,16 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>amazone</title>
-    <link rel="icon" href="./images/amazone-favicon.png">
+    <link rel="icon" href="./images/amazone-favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-</head>
-<body>
-<!-- navbar start  -->
- <div class="content-wrapper">
-    .logo
- </div>
-</body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- navbar start  -->
+    <nav class="navbar">
+      <div class="logo border"><img src="./images/amazon-logo.png" alt="" /></div>
+      <div class="location border">
+        <i class="fa-solid fa-location-dot"></i>
+        <div class="location-cont">
+          <p class="delivery-loc">Delivering to Mohali 140301</p>
+          <p class="update-loc">Update Location</p>
+        </div>
+      </div>
+      <div class="search-bar">
+        <form action="">
+          <select name="category" id="">
+            <option value="">All CateGories</option>
+            <option value="">Men</option>
+            <option value="">Women</option>
+            <option value="">Electronics</option>
+          </select>
+          <input
+            type="text"
+            name="Serach-input"
+            class="search-input"
+            placeholder="Serach Amazon.in"
+          />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <div class="language border">
+        <img src="./images/India-lang.webp" alt="" />EN
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+      <div class="account-info border">
+        <p class="sign-in">Hello, sign in</p>
+        <p class="account">Account & Lists <i class="fa-solid fa-caret-down"></i></p>
+      </div>
+      <div class="orders-wraper border">
+        <p class="return">Return</p>
+        <p class="orders">& Orders</p>
+      </div>
+      <div class="cart border">
+        <i class="fa-solid fa-cart-shopping"></i> <span>Cart</span>
+      </div>
+    </nav>
+  </body>
 </html>
