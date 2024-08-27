@@ -14,8 +14,6 @@ body{
 .container{
     max-width: 1500px;
     margin: auto;
-    
-    
 }
 /* nav css  */
 nav{
@@ -175,11 +173,82 @@ justify-content: center;
     border-color:white;
 }
 
+/* sub menu all  */
+.all-sub-menu{
+    width: 0px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 201;
+    top: 0;
+    transition: all 0.2s;
+    /* display: none; */
+    overflow: hidden;
+}
+.all-menu{
+    width: 350px;
+    /* overflow-x:unset ; */
+    overflow-y: scroll;
+    
+}
+.all-close-btn{
+    color: white;
+    position: absolute;
+    top: 20px;
+    right:30px;
+}
+.all-menu-profile{
+    background-color: #232F3E;
+    color: #fff;
+    padding: 12px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.all-menu-profile i{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #232F3E;
+    background: #fff;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.all-menu-profile span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.all-menus-list h4,.all-menus-list a{
+    display: block;
+    padding: 12px 35px;
+}
+.all-menus-list h4{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.all-menus-list a{
+    text-decoration: none;
+    color: #111111;
+    font-size: 14px;
+}
+.all-menus-list a:hover{
+    background-color: #EAEDED;
+}
+.all-menus-list hr{
+    color: #111111;
+    margin-top: 4px;
+}
+
+
+
 /* banner section start  */
 /* swiper slider  */
 .banner-s{
-    height: 500px;
-    min-height: 100vh;
+    /* height: 700px; */
+    min-height: 700px;
     position: relative;
     /* background-color: gray; */
     z-index: 100;
@@ -192,7 +261,7 @@ justify-content: center;
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 18px; 
   /* background: #E3E6E6; */
   /* background-color: red; */
   display: flex;
@@ -250,7 +319,7 @@ justify-content: center;
 .products-box{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 23%;
     /* border: 1px solid black; */
     /* background-color: gray; */
     padding: 20px 15px;
@@ -284,8 +353,19 @@ justify-content: center;
 }
 .products-column{
     display: flex;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
     justify-content: space-evenly;
     padding: 0 20px;
+    flex-wrap: wrap;
+}
+.products-container{
+    padding: 0 25px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -35px;
+    position: relative;
+    z-index: 121;
 }

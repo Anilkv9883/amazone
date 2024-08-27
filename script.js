@@ -12,3 +12,13 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+  // sub menu all 
+ $(".all-btn").click(function(){
+  $(".all-sub-menu").addClass("all-menu")
+ })
+
+ $(".all-close-btn").click(function(){
+  $(".all-sub-menu").removeClass("all-menu")
+ })
